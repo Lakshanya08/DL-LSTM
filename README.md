@@ -38,7 +38,7 @@ Evaluate Model – Test the model and measure accuracy.
 
 ### Name:LAKSHANYA N
 
-### Register Number212224230136
+### Register Number: 212224230136
 
 ```
 import pandas as pd
@@ -199,7 +199,7 @@ evaluate_model(model, test_loader, X_test, y_test)
 
 # Plot loss
 print('Name:LAKSHANYA N')
-print('Register Number212224230136')
+print('Register Number:212224230136')
 history_df = pd.DataFrame({"loss": train_losses, "val_loss": val_losses})
 history_df.plot(title="Loss Over Epochs")
 plt.xlabel("Epoch")
@@ -216,7 +216,7 @@ preds = torch.argmax(output, dim=-1).squeeze().cpu().numpy()
 true = y_test[i].numpy()
 
 print('Name:LAKSHANYA N')
-print('Register Number212224230136')
+print('Register Number:212224230136')
 print("{:<15} {:<10} {}\n{}".format("Word", "True", "Pred", "-" * 40))
 for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
     if w_id.item() != word2idx["ENDPAD"]:
